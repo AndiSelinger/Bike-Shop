@@ -1,0 +1,12 @@
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\bin\Debug\net6.0\CommonBase.deps.json
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\bin\Debug\net6.0\CommonBase.dll
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\bin\Debug\net6.0\CommonBase.pdb
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\CommonBase.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\CommonBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\CommonBase.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\CommonBase.AssemblyInfo.cs
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\CommonBase.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\CommonBase.dll
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\refint\CommonBase.dll
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\CommonBase.pdb
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\CommonBase\obj\Debug\net6.0\ref\CommonBase.dll

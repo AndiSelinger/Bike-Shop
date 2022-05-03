@@ -1,0 +1,15 @@
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\bin\Debug\net6.0\BikeShop.Logic.deps.json
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\bin\Debug\net6.0\BikeShop.Logic.dll
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\bin\Debug\net6.0\BikeShop.Logic.pdb
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\bin\Debug\net6.0\CommonBase.dll
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\bin\Debug\net6.0\CommonBase.pdb
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.AssemblyInfo.cs
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.csproj.CopyComplete
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.dll
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\refint\BikeShop.Logic.dll
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\BikeShop.Logic.pdb
+C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\BikeShopService\BikeShop.Logic\obj\Debug\net6.0\ref\BikeShop.Logic.dll

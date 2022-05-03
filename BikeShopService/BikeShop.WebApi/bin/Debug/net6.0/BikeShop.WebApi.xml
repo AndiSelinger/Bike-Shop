@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BikeShop.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:BikeShop.WebApi.Controllers.GenericController`3">
+            <summary>
+            A generic one for the standard CRUD operations.
+            </summary>
+            <typeparam name="TEntity">The type of entity</typeparam>
+            <typeparam name="TEditModel">The type of edit model</typeparam>
+            <typeparam name="TModel">The type of model</typeparam>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericController`3.ToModel(`0)">
+            <summary>
+            Converts an entity to a model and copies all properties of the same name from the entity to the model.
+            </summary>
+            <param name="entity">The entity to be converted</param>
+            <returns>The model with the property values of the same name</returns>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericController`3.ToModel(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Converts all entities to models and copies all properties of the same name from an entity to the model.
+            </summary>
+            <param name="entities">The entities to be converted</param>
+            <returns>The models</returns>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericController`3.GetAsync">
+            <summary>
+            Gets a list of models
+            </summary>
+            <returns>List of models</returns>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericController`3.GetAsync(System.Int32)">
+            <summary>
+            Get a single model by Id.
+            </summary>
+            <param name="id">Id of the model to get</param>
+            <response code="200">Model found</response>
+            <response code="404">Model not found</response>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericController`3.PostAsync(`1)">
+            <summary>
+            Adds a model.
+            </summary>
+            <param name="model">Model to add</param>
+            <returns>Data about the created model (including primary key)</returns>
+            <response code="201">Model created</response>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericController`3.PutAsync(System.Int32,`1)">
+            <summary>
+            Updates a model
+            </summary>
+            <param name="id">Id of the model to update</param>
+            <param name="model">Data to update</param>
+            <returns>Data about the updated model</returns>
+            <response code="200">Model updated</response>
+            <response code="404">Model not found</response>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericController`3.DeleteAsync(System.Int32)">
+            <summary>
+            Delete a single model by Id
+            </summary>
+            <param name="id">Id of the model to delete</param>
+            <response code="204">Model deleted</response>
+            <response code="404">Model not found</response>
+        </member>
+        <member name="T:BikeShop.WebApi.Controllers.GenericFacadeController`3">
+            <summary>
+            A generic one for the standard CRUD operations.
+            </summary>
+            <typeparam name="TFasadeModel">The type of entity</typeparam>
+            <typeparam name="TEditModel">The type of edit model</typeparam>
+            <typeparam name="TOutModel">The type of model</typeparam>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericFacadeController`3.ToOutModel(`0)">
+            <summary>
+            Converts an entity to a model and copies all properties of the same name from the entity to the model.
+            </summary>
+            <param name="entity">The entity to be converted</param>
+            <returns>The model with the property values of the same name</returns>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericFacadeController`3.ToOutModel(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Converts all entities to models and copies all properties of the same name from an entity to the model.
+            </summary>
+            <param name="entities">The entities to be converted</param>
+            <returns>The models</returns>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericFacadeController`3.GetAsync">
+            <summary>
+            Gets a list of models
+            </summary>
+            <returns>List of models</returns>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericFacadeController`3.GetAsync(System.Int32)">
+            <summary>
+            Get a single model by Id.
+            </summary>
+            <param name="id">Id of the model to get</param>
+            <response code="200">Model found</response>
+            <response code="404">Model not found</response>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericFacadeController`3.PostAsync(`1)">
+            <summary>
+            Adds a model.
+            </summary>
+            <param name="model">Model to add</param>
+            <returns>Data about the created model (including primary key)</returns>
+            <response code="201">Model created</response>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericFacadeController`3.PutAsync(System.Int32,`1)">
+            <summary>
+            Updates a model
+            </summary>
+            <param name="id">Id of the model to update</param>
+            <param name="model">Data to update</param>
+            <returns>Data about the updated model</returns>
+            <response code="200">Model updated</response>
+            <response code="404">Model not found</response>
+        </member>
+        <member name="M:BikeShop.WebApi.Controllers.GenericFacadeController`3.DeleteAsync(System.Int32)">
+            <summary>
+            Delete a single model by Id
+            </summary>
+            <param name="id">Id of the model to delete</param>
+            <response code="204">Model deleted</response>
+            <response code="404">Model not found</response>
+        </member>
+        <member name="P:BikeShop.WebApi.Models.IdentityModel.Id">
+            <summary>
+            ID of the entity (primary key)
+            </summary>
+        </member>
+        <member name="P:BikeShop.WebApi.Models.VersionModel.RowVersion">
+            <summary>
+            Row version of the entity.
+            </summary>
+        </member>
+    </members>
+</doc>

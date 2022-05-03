@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1+G/z8ud0WI07RTepZUQhBj88c2bLrDt5JX8kSBM1/E=",
+  "Source": "BikeShop.WebApi",
+  "BasePath": "_content/BikeShop.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
