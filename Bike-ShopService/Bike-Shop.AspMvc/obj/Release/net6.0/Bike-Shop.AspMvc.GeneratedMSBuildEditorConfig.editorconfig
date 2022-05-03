@@ -11,7 +11,7 @@ build_property.RootNamespace = Bike-Shop.AspMvc
 build_property.ProjectDir = C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\Bike-ShopService\Bike-Shop.AspMvc\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\andre\Documents\Google Drive Sync\Kolleg Leonding\5_6 ACIF\06. SYP Klewein\Aufgaben\Bike-Shop\Bike-ShopService\Bike-Shop.AspMvc
 build_property._RazorSourceGeneratorDebug = 
 
