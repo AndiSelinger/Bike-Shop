@@ -36,9 +36,14 @@ namespace BikeShop.Logic.Controllers
                 throw new LogicException("Mileage can't be lower than 0");
         }
 
-        public async Task QueryByShop(int? shopId)
+        public Task<Entities.Bike[]> QueryByShopIdAsync(int? shopId)
         {
+            var result = EntitySet.AsQueryable();
 
+            if (shopId != null)
+                result = result.Where(e => e.ShopId == shopId);
+
+            return result.AsNoTracking().ToArrayAsync();
         }
     }
 }

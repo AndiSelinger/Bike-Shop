@@ -12,5 +12,7 @@ namespace BikeShop.WebApi.Controllers
         public ShopsController(Logic.Controllers.ShopsController controller) : base(controller)
         {
         }
+
+
     }
 }

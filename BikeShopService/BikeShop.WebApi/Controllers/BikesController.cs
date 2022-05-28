@@ -13,5 +13,20 @@ namespace BikeShop.WebApi.Controllers
         {
 
         }
+
+        [HttpGet("Query", Name =nameof(GetBikesByShopId))]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public virtual async Task<ActionResult<Models.Bike>> GetBikesByShopId(
+            [FromQuery(Name ="BikeShopId")] int? shopId
+            )
+        {
+            var ctrl = Controller as Logic.Controllers.BikesController;
+            if (ctrl == null)
+                return Ok(Array.Empty<Models.Bike>());
+
+            var result = await ctrl.QueryByShopIdAsync(shopId);
+
+            return Ok(result.Select(e => ToModel(e)));
+        }
     }
 }
