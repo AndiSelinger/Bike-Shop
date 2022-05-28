@@ -51,5 +51,13 @@ namespace BikeShop.Logic.Entities
 
         [Required]
         public int Mileage { get; set; }
+
+        public string? ImageLink { get; set; }
+
+        //fk
+        public int ShopId { get; set; }
+
+        //nav.prop
+        public Shop Shop { get; set; } = new Shop();
     }
 }

@@ -42,6 +42,9 @@ namespace BikeShop.Logic.Migrations
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");
 
+                    b.Property<string>("ImageLink")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("LastService")
                         .HasColumnType("datetime2");
 
@@ -67,6 +70,9 @@ namespace BikeShop.Logic.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("rowversion");
 
+                    b.Property<int>("ShopId")
+                        .HasColumnType("int");
+
                     b.Property<bool?>("SpecialModel")
                         .HasColumnType("bit");
 
@@ -80,10 +86,70 @@ namespace BikeShop.Logic.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ShopId");
+
                     b.HasIndex("Vin")
                         .IsUnique();
 
                     b.ToTable("Bike", "bikeshop");
+                });
+
+            modelBuilder.Entity("BikeShop.Logic.Entities.Shop", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("BikeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("GoogleAddressString")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Address")
+                        .IsUnique();
+
+                    b.HasIndex("Location")
+                        .IsUnique();
+
+                    b.ToTable("Shop", "bikeshop");
+                });
+
+            modelBuilder.Entity("BikeShop.Logic.Entities.Bike", b =>
+                {
+                    b.HasOne("BikeShop.Logic.Entities.Shop", "Shop")
+                        .WithMany("Bikes")
+                        .HasForeignKey("ShopId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Shop");
+                });
+
+            modelBuilder.Entity("BikeShop.Logic.Entities.Shop", b =>
+                {
+                    b.Navigation("Bikes");
                 });
 #pragma warning restore 612, 618
         }

@@ -27,6 +27,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 builder.Services.AddTransient<BikeShop.Logic.Controllers.BikesController>();
+builder.Services.AddTransient<BikeShop.Logic.Controllers.ShopsController>();
 
 var app = builder.Build();
 

@@ -10,9 +10,16 @@ namespace BikeShop.Logic.Controllers
 {
     public class BikesController : GenericController<Entities.Bike>
     {
+        public BikesController()
+        {
+        }
+
+        public BikesController(ControllerObject other) : base(other)
+        {
+        }
+
         protected override void ValidateEntity(ActionType actionType, Bike entity)
         {
-
             if (entity.Vin.Length != 17)  //VIN is 17 digits
                 throw new LogicException("The VIN has to be 17 characters long");
             if (entity.Power < 0)
@@ -27,6 +34,11 @@ namespace BikeShop.Logic.Controllers
                 throw new LogicException("Please check the date of the last service");
             if (entity.Mileage < 0)
                 throw new LogicException("Mileage can't be lower than 0");
+        }
+
+        public async Task QueryByShop(int? shopId)
+        {
+
         }
     }
 }
