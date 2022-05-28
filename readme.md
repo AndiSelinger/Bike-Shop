@@ -21,9 +21,9 @@ Das Datenmodell für ***BikeShop*** hat folgenden Aufbau:
 |Id | int |---|---  |---|  Yes | R |
  | RowVersion | byte[] | --- | No | --- |  Yes | R |
  | Brand | String | 128 | No |  No | Yes | RW |
-  | Type | string | 128 | No | Yes | Yes | RW |
+  | Type | string | 128 | No | No | Yes | RW |
   | Model | string | 128 | No | No | Yes | RW |
-  | Vin | string | --- | No | No | Yes | RW |
+  | Vin | string | --- | No | Yes | Yes | RW |
   | Power | int | --- | No | No | Yes | RW |
   | CCM | int | --- | No | No | Yes | RW |
   | Color | string | 64 | No | No | Yes | RW |
