@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKESHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: var(--primary-color);
+
+        }
+        .header-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover ;
+            object-position: 40%, 60%;
+            display: block;
+        }
+
+        .headline {
+            color: #831D17;
+        }
+
+        .image-cnt {
+            background-color: var(--primary-color);
+            padding: 32px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #2196f3;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size:24px;
+            overflow: hidden;
+            transition: 0.2s;
+        }
+        a:hover {
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px#2196f3;
+            transition-delay: 1s;
+        }
+        a span {
+            position: absolute;
+            display: block;
+        }
+        a span:nth-child(1)
+        {
+            top:0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #2196f3);
+        }
+        a:hover span:nth-child(1){
+            left: 100%;
+            transition: 1s;
+        }
+        a span:nth-child(3)
+        {
+            bottom:0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #2196f3);
+        }
+        a:hover span:nth-child(3){
+            right : 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+        a span:nth-child(2)
+        {
+            top:-100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #2196f3);
+        }
+        a:hover span:nth-child(2){
+            top : 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+        }
+        a span:nth-child(4)
+        {
+            bottom:-100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #2196f3);
+        }
+        a:hover span:nth-child(4){
+            bottom : 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+        }
+
+        .text-highlight {
+            color: var(--secondary-color);
+            font-size: 42px;
+            align-items: left;
+            margin: 16px;
+        }
+        .text-cnt {
+            background-color:var(--primary-color);
+            padding: 10px;
+            font-weight: 600;
+        }
+
+        .maps-cnt{
+            margin-top: 16px;
+            margin-left: 32px;
+            margin-bottom: 16px;
+            display:flex;
+            justify-content: space-between;
+        }
+        .maps-right {
+            color: var(--secondary-color);
+            width: 30%;
+            margin-left: 16px;
+        }
+        .maps-frame {
+            border: 0;
+            height: 350px;
+            width: 70%;
+
+        }
+
+        .legal-content
+        {
+            padding: 8px;
+            color: var(--secondary-color);
+        }
+        .legal-text{
+            margin-left: 12px;
+            padding: 20px;
+            margin-bottom: 60px;
+            color: var(--secondary-color);
+        }
+
+        #icon{
+           width: 30px;
+           cursor: pointer;  
+        }
+
+        :root{
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+
+
+        .dark-theme{
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+
+        .search-cnt {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            margin:50px ;
+            height: 55px;
+            display: flex;
+            justify-content:center;
+
+        }
+        form{
+            background: #fff;
+            width: 600px;
+            height: 55px;
+            display: flex;
+        }
+        form input{
+            flex: 1;
+            border: none;
+            outline: none;
+        }
+        form button{
+            background: #378cd6;
+            padding: 10px 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        form .fa-search{
+            align-self: center;
+            padding: 10px 20px;
+            color: #777;
+        }
+        .header-text{
+            margin:auto;
+            padding: 20px;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+<script src="https://kit.fontawesome.com/fef31f3b02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">  
+    <h1 class="headline">
+        <span class="text-highlight">Motor<br> BikeShop</span>
+    </h1>
+        <span class="header-text">
+        <a href="#"><span></span>
+                     <span></span>
+                    <span></span>
+                    <span></span>
+                    Shop</a>
+                
+                    <a href="#"><span></span>
+                        <span></span>
+                       <span></span>
+                       <span></span>
+                       Team</a>
+                    
+                       <a href="#"><span></span>
+                        <span></span>
+                       <span></span>
+                       <span></span>
+                       Karriere</a>
+                    
+                       <a href="#"><span></span>
+                        <span></span>
+                       <span></span>
+                       <span></span>
+                       Service</a></span>
+
+
+    <img src="moon-symbol-icono-61966.png" id="icon">
+    </div>    
+    <div class="image-cnt">
+    <img class="header-image" src="header.png">
+    </div>
+    
+<div class="search-cnt">
+    <form>
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="what you are looking for?">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+
+    <div class="maps-cnt">
+        <iframe class="maps-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.4788888507355!2d14.236062715652494!3d48.23590817923149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739681e2dc7f2d%3A0x70fe4ee6dc74934d!2sLouis%20Traun%20bei%20Linz%20-%20Motorradbekleidung%20und%20Motorradzubeh%C3%B6r!5e0!3m2!1sde!2sat!4v1653753453948!5m2!1sde!2sat" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="text-cnt maps-right">
+    Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext. 
+    Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext. 
+    Das ist ein Testtext. 
+    Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext. 
+    Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext. 
+    Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext. 
+    Das ist ein Testtext.  Das ist ein Testtext.  Das ist ein Testtext. 
+</div>
+
+    </div>
+
+
+
+    </div>
+
+    <div class="legal-content">
+       <span class="legal-text"> (C) 2022 RichKids GmbH</span> <br> <a href='#'><span></span><span></span><span></span><span></span>Impressum</a> <br> <a href='#'><span></span><span></span><span></span><span></span>Datenschutz</a>
+    </div>
+
+<script>
+
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "sun.png";
+        
+        }else{
+            icon.src= "moon-symbol-icono-61966.png";
+        }
+    }
+    
+
+</script>
+
+</body>
+</html>
