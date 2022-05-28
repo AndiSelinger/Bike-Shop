@@ -26,7 +26,7 @@ Das Datenmodell für ***BikeShop*** hat folgenden Aufbau:
   | Vin | string | --- | No | Yes | Yes | RW |
   | Power | int | --- | No | No | Yes | RW |
   | CCM | int | --- | No | No | Yes | RW |
-  | Color | string | 64 | No | No | Yes | RW |
+  | Color | string | 64 | Yes | No | Yes | RW |
   | ProductionYear | DateTime | --- | No | No | Yes | RW |
   | Price | int | --- | No | No | Yes | RW |
   | SpecialModel | bool | --- | Yes | No | No | RW |
