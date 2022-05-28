@@ -18,23 +18,23 @@ Das Datenmodell für ***BikeShop*** hat folgenden Aufbau:
 
 | ------ | ------ | ----------- | ---------- | ------ | -------- |    ------ |
 
- - | Id | int |---|---  |---|  Yes | R |
- - | RowVersion | byte[] | --- | No | --- |  Yes | R |
- - | Brand | String | 128 | No |  No | Yes | RW |
- - | Type | string | 128 | No | No | Yes | RW |
- - | Model | string | 128 | No | No | Yes | RW |
- - | Vin | string | --- | No | No | Yes | RW |
- - | Power | int | --- | No | No | Yes | RW |
- - | CCM | int | --- | No | No | Yes | RW |
- - | Color | string | 64 | No | No | Yes | RW |
- - | ProductionYear | DateTime | --- | No | No | Yes | RW |
- - | Price | int | --- | No | No | Yes | RW |
- - | SpecialModel | bool | --- | Yes | No | No | RW |
- - | ServiceNeeded | Bool | --- | Yes | No | No | RW |
- - | ServiceNeeded | Bool | --- | Yes* | No | No | RW |
- - | Mileage | int | --- | No | No | Yes | RW |
- - | ImageLink | string | --- | Yes| No | No | RW |
- - | ShopId | int | --- | No | No | Yes | RW |
+ | Id | int |---|---  |---|  Yes | R |
+ | RowVersion | byte[] | --- | No | --- |  Yes | R |
+ | Brand | String | 128 | No |  No | Yes | RW |
+ | Type | string | 128 | No | No | Yes | RW |
+ | Model | string | 128 | No | No | Yes | RW |
+ | Vin | string | --- | No | No | Yes | RW |
+ | Power | int | --- | No | No | Yes | RW |
+ | CCM | int | --- | No | No | Yes | RW |
+ | Color | string | 64 | No | No | Yes | RW |
+ | ProductionYear | DateTime | --- | No | No | Yes | RW |
+ | Price | int | --- | No | No | Yes | RW |
+ | SpecialModel | bool | --- | Yes | No | No | RW |
+ | ServiceNeeded | Bool | --- | Yes | No | No | RW |
+ | ServiceNeeded | Bool | --- | Yes* | No | No | RW |
+ | Mileage | int | --- | No | No | Yes | RW |
+ | ImageLink | string | --- | Yes| No | No | RW |
+ | ShopId | int | --- | No | No | Yes | RW |
 
 *calculated field
 
