@@ -14,27 +14,39 @@ Zu entwickeln war das Backend-System mit der Datenbank-Anbindung, eine Web-Anwen
 Das Datenmodell für ***BikeShop*** hat folgenden Aufbau:
 
 
-| Name | Type | MaxLength | Nullable | Unique |Db-Field | Access |
+***BIKE***
 
-| ------ | ------ | ----------- | ---------- | ------ | -------- |    ------ |
-
- | Id | int |---|---  |---|  Yes | R |
+|Name|Type|MaxLength|Nullable|Unique|Db-Field|Access|
+|------|------|-----------|----------|------|--------|------|
+|Id | int |---|---  |---|  Yes | R |
  | RowVersion | byte[] | --- | No | --- |  Yes | R |
  | Brand | String | 128 | No |  No | Yes | RW |
- | Type | string | 128 | No | No | Yes | RW |
- | Model | string | 128 | No | No | Yes | RW |
- | Vin | string | --- | No | No | Yes | RW |
- | Power | int | --- | No | No | Yes | RW |
- | CCM | int | --- | No | No | Yes | RW |
- | Color | string | 64 | No | No | Yes | RW |
- | ProductionYear | DateTime | --- | No | No | Yes | RW |
- | Price | int | --- | No | No | Yes | RW |
- | SpecialModel | bool | --- | Yes | No | No | RW |
- | ServiceNeeded | Bool | --- | Yes | No | No | RW |
- | ServiceNeeded | Bool | --- | Yes* | No | No | RW |
- | Mileage | int | --- | No | No | Yes | RW |
- | ImageLink | string | --- | Yes| No | No | RW |
- | ShopId | int | --- | No | No | Yes | RW |
+  | Type | string | 128 | No | No | Yes | RW |
+  | Model | string | 128 | No | No | Yes | RW |
+  | Vin | string | --- | No | No | Yes | RW |
+  | Power | int | --- | No | No | Yes | RW |
+  | CCM | int | --- | No | No | Yes | RW |
+  | Color | string | 64 | No | No | Yes | RW |
+  | ProductionYear | DateTime | --- | No | No | Yes | RW |
+  | Price | int | --- | No | No | Yes | RW |
+  | SpecialModel | bool | --- | Yes | No | No | RW |
+  | LastService | Bool | --- | Yes | No | No | RW |
+  | ServiceNeeded | Bool | --- | Yes* | No | No | RW |
+  | Mileage | int | --- | No | No | Yes | RW |
+ | ImageLink | string | --- | Yes | No | No | RW |
+  | ShopId | int | --- | No | No | Yes | RW |
+
+
+***SHOP***
+|Name|Type|MaxLength|Nullable|Unique|Db-Field|Access|
+|------|------|-----------|----------|------|--------|------|
+|Id | int |---|---  |---|  Yes | R |
+ | RowVersion | byte[] | --- | No | --- |  Yes | R |
+ | Location | String | ---| No |  Yes | Yes | RW |
+  | Adress | string | --- | No | Yes | Yes | RW |
+  | PhoneNumber| string | --- | No | No | Yes | RW |
+  | GoogleAdressString | string | --- | Yes | No | Yes | RW |
+
 
 *calculated field
 
@@ -47,21 +59,21 @@ Das System muss einige Geschäftsregeln umsetzen. Diese Regeln werden im Backend
 
 Für den ***BikeShop.Logic*** sind folgende Regeln definiert:
 
-Die **VIN** darf nicht länger als 17 Zeichen sein.
+Die **VIN** muss exakt 17 Zeichen lang sein.
 **Power** darf nicht kleiner sein als 0.
 **CCM** darf nicht kleiner sein als 0.
 **Price** darf nicht kleiner sein als 0.
 
-Das Motorrad muss jünger sein als 1900 und kein Motorrad hat einen Kilometerzählerstand von 0,00 KM.
+Das Motorrad muss jünger sein als 1900 und kein Motorrad hat einen Kilometerzählerstand unter 0,00 KM. Servicejahr darf nicht unter Produktionsjahr sein.
 
 
 #### RESTful-Service
 
-REST-Service Zugriff für die Entität ***'Bike'*** mit folgende Komponenten:
+REST-Service Zugriff für zwei Entitäten ***'Bike' und 'Shop'*** mit folgende Komponenten:
 
-- Zwei ***Modelle*** für die Entität ***'Bike'***.
+- Zwei ***Modelle*** für die Entitäten ***'Bike' und 'Shop'***.
 
-- Einen ***Kontroller*** mit den folgenden Operationen
+- Zwei ***Kontroller*** mit den folgenden Operationen
 
 - Abfrage alle Bikes
 
@@ -73,7 +85,7 @@ REST-Service Zugriff für die Entität ***'Bike'*** mit folgende Komponenten:
 
 - Löschen eines Bikes
 
- Abfrage aller Bikes anhand der Parameter:
+ Abfrage aller Bikes anhand der Parameter bei dem ***BikeShop Kontroller*** implementieren:
 
 - ShopId
 
@@ -84,6 +96,5 @@ REST-Service Zugriff für die Entität ***'Bike'*** mit folgende Komponenten:
 - Erstellen des Service
 - Designen der Komponententeile
 - Erstellung der Applikation durch AngularClient
-
 
 
