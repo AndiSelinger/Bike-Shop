@@ -31,7 +31,7 @@ Das Datenmodell für ***BikeShop*** hat folgenden Aufbau:
   | Price | int | --- | No | No | Yes | RW |
   | SpecialModel | bool | --- | Yes | No | No | RW |
   | LastService | Bool | --- | Yes | No | No | RW |
-  | ServiceNeeded | Bool | --- | Yes* | No | No | RW |
+  | ServiceNeeded | Bool | --- | No* | No | No | RW |
   | Mileage | int | --- | No | No | Yes | RW |
  | ImageLink | string | --- | Yes | No | No | RW |
   | ShopId | int | --- | No | No | Yes | RW |
