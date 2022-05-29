@@ -1,4 +1,10 @@
 body {
-    margin: 0;
-    background-color: lightblue;
+  background-color: lightblue;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-container{
+    background-color: gray;
+    height: 600px;
 }
