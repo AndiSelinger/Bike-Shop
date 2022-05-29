@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BikeShop.Logic.Entities.Bike">
-    <Position X="3.25" Y="2.25" Width="1.5" />
+    <Position X="3" Y="2.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAQQAAAAAAAIAIAAEAAACAAAABAwgCgAABABA=</HashCode>
+      <HashCode>QAIAAAAAQQAAAAAAAIAIAAEAAACAAAABAwgCgAABABA=</HashCode>
       <FileName>Entities\Bike.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -11,14 +11,30 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BikeShop.Logic.Entities.Shop">
-    <Position X="5.75" Y="2.25" Width="1.5" />
+    <Position X="5.75" Y="2.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAIAwAgAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAwAgAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Shop.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Bikes" />
     </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BikeShop.Logic.Entities.VersionEntity" Collapsed="true">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\VersionEntity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BikeShop.Logic.Entities.IdentityEntity" Collapsed="true">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\IdentityEntity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
