@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\Documents\\Google Drive Sync\\Kolleg Leonding\\5_6 ACIF\\06. SYP Klewein\\Aufgaben\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj": {}
+    "C:\\Users\\odk\\source\\repos\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\Documents\\Google Drive Sync\\Kolleg Leonding\\5_6 ACIF\\06. SYP Klewein\\Aufgaben\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj": {
+    "C:\\Users\\odk\\source\\repos\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\Documents\\Google Drive Sync\\Kolleg Leonding\\5_6 ACIF\\06. SYP Klewein\\Aufgaben\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj",
+        "projectUniqueName": "C:\\Users\\odk\\source\\repos\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj",
         "projectName": "CommonBase",
-        "projectPath": "C:\\Users\\andre\\Documents\\Google Drive Sync\\Kolleg Leonding\\5_6 ACIF\\06. SYP Klewein\\Aufgaben\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\Documents\\Google Drive Sync\\Kolleg Leonding\\5_6 ACIF\\06. SYP Klewein\\Aufgaben\\Bike-Shop\\BikeShopService\\CommonBase\\obj\\",
+        "projectPath": "C:\\Users\\odk\\source\\repos\\Bike-Shop\\BikeShopService\\CommonBase\\CommonBase.csproj",
+        "packagesPath": "C:\\Users\\odk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\odk\\source\\repos\\Bike-Shop\\BikeShopService\\CommonBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\odk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
