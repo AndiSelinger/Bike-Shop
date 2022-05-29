@@ -13,6 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{7D1E32D0-6289-41AB-B44D-31F87C0C21A2}"
 	ProjectSection(SolutionItems) = preProject
 		ReadMe.md = ReadMe.md
+		ReadMeBike-Shop.md = ReadMeBike-Shop.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeShop.Logic.UnitTest", "BikeShop.Logic.UnitTest\BikeShop.Logic.UnitTest.csproj", "{DA2BE746-8EFA-48EB-BE54-F27E3ED868C4}"
