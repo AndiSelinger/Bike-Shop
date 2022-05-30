@@ -1,1 +1,11 @@
-<p>bike-list-box works!</p>
+<a class="list-box clearfix" (click)="selectBike()">
+  <div style="margin-bottom: 5px;">
+    <img src="{{bike.imageLink}}" alt="{{bike.model}}" style="max-height: 200px" />
+  </div>
+  <div style="margin-bottom: 10px;">
+    <h4>Bike Name: {{bike.brand}} {{bike.type}} {{bike.model}}</h4>
+    <h5>Kilometerstand: {{bike.mileage}} Km</h5>
+    <p>Price: {{bike.price}} €</p>
+    <button type="button" class="btn btn-success">Book Test Drive</button>
+  </div>
+</a>

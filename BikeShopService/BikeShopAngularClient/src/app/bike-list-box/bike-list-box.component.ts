@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Bike } from '../bike.model';
 
 @Component({
   selector: 'app-bike-list-box',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BikeListBoxComponent implements OnInit {
 
+
   constructor() { }
 
-  ngOnInit(): void {
+  @Input() bike!: Bike;
+  @Output() selectedBike = new EventEmitter<void>();
+
+  ngOnInit() {
   }
 
+  selectBike() {
+    this.selectedBike.emit();
+  }
 }

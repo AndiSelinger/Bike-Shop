@@ -1,11 +1,10 @@
 body {
-  background-color: rgba(10,20,20,0.1);
-  padding-left: 50px;
-  padding-right: 50px;
+  background-color: rgba(0,0,0,0.1);
+}
+a:hover{
+  text-decoration: underline;
 }
 
-.main-container{
-    background-color: lightcyan;
-    height: 600px;
-    padding: 20px;
-}
+
+
+

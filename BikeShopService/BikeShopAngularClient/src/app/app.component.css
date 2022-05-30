@@ -1,1 +1,9 @@
+.main-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
+.body-container {
+  background-color: white;
+  padding: 16px;
+}

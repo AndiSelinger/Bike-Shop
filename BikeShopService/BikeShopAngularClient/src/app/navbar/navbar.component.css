@@ -1,0 +1,28 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+a {
+  color: #831d17;
+  text-decoration: none;
+  margin-left: 14px;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand{
+    font-size: 20px;
+}
+
+
