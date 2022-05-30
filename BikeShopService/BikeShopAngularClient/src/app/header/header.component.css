@@ -1,30 +1,21 @@
-header{
-    box-shadow: 2px 2px 2px rgb(0,0,0,0.3);
-    background-color: white;
+.header {
+  background-color: rgba(10,20,20,0.001);
+  height: 150px;
+  border-bottom: solid;
+  border-color: rgba(0,0,0,0.3);
+  margin-bottom: 10px;
 }
 
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.column{
+    height: 150px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.logo{
-    height: 200px;
-    margin-top: 16px;
-    margin-bottom: 5px;
-    margin-left: 60px;
+
+.row{
+    align-content: center;
 }
 
-.banner {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 20% 80%;
-    display: block;
-    margin-right: 600px;
-}
 
-.banner-container{
-    width: 100%;
-}
+

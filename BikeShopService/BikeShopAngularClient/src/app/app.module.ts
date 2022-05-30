@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BikeListBoxComponent } from './bike-list-box/bike-list-box.component';
 import { BikeDetailsComponent } from './bike-details/bike-details.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BikeListBoxComponent,
-    BikeDetailsComponent
+    BikeDetailsComponent,
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule, HttpClientModule
