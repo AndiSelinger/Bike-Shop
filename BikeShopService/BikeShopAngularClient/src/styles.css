@@ -1,10 +1,11 @@
 body {
-  background-color: lightblue;
+  background-color: rgba(10,20,20,0.1);
   padding-left: 50px;
   padding-right: 50px;
 }
 
 .main-container{
-    background-color: gray;
+    background-color: lightcyan;
     height: 600px;
+    padding: 20px;
 }
