@@ -62,7 +62,25 @@
                     down: 50%;
                 }
             }
+			.map-image {
+                width: 80%;
+                object-fit: cover;
+                display: block;
+            }
 
+            .info-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                padding: 16px;
+            }
+            .description-list {
+                margin-left: 15 px;
+                font-weight: 700;
+                font-size: medium;
+                margin-left: 15px;
+            }
             a#hinkelstein {
                 object-fit: none;
                 object-position: -10px, -10px;
@@ -71,8 +89,10 @@
                 animation: move 4s;            
                 animation-iteration-count: infinite;
             }
+
         </style>
     </head>
+
 
     <body>
         <header>
@@ -85,16 +105,36 @@
                 
                 <div>
                     <a href="Auswahl.html">Auswahl</a>
-                    <a href="Aktion.html">Sonderaktion</a>
+                    <a href="Kontakt.html">Kontakt</a>
                 </div>
             </div>
             <a id="hinkelstein">
                 <img src="hinkelstein.png" height="50px">
             </a>
         </header>
-        
-        <div> <img src="Hinkelstein_Geschenk.gif"></div>
  
+
+        <div class="info-box">
+            <img class="map-image" src="Gallien_Karte.jpg">
+
+
+            <div class="description-list">
+                Für Anfragen kommt direkt zu Obelixes Hinkelsteingeschäft:
+                <ol>
+                    <li>Nordwestlich von Lutetia</li>
+                    <li>Orientiert euch an den Römern</li>
+                    <ul>
+                        <li>Je kaputter die Römer, desto näher am Ziel</li>
+                    </ul>
+                    <li>Sobald ihr im gallischen Dorf seid, <br> fragt nach dem muskulösen Hinkelsteinhersteller</li>
+                    <ul>
+                        <li>Ich bin nicht dick!</li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
+
+
         <footer class="legal-content">
             <span class="legal-text">
                 (c) L BC Obelix Gmbh  |<a href="Impressum.html">Impressum</a>
