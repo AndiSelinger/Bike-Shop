@@ -106,9 +106,6 @@ namespace BikeShop.Logic.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("BikeId")
-                        .HasColumnType("int");
-
                     b.Property<string>("GoogleAddressString")
                         .HasColumnType("nvarchar(max)");
 

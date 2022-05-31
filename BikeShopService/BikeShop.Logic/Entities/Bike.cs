@@ -55,6 +55,7 @@ namespace BikeShop.Logic.Entities
         public string? ImageLink { get; set; }
 
         //fk
+        [Required]
         public int ShopId { get; set; }
 
         //nav.prop

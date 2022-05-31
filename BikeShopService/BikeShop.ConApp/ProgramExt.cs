@@ -11,7 +11,7 @@ namespace BikeShop.ConApp
     {
         static async partial void BeforeRun()
         {
-            var bike = new Bike()
+            var bike = new Logic.Entities.Bike()
             {
                 Brand = "Suzuki",
                 Type="GSXR", 
@@ -25,7 +25,7 @@ namespace BikeShop.ConApp
                 ImageLink= "assets/img/Hayabusa.jpg"
             };
 
-            var ctrl = new Logic.Controllers.BikesController();
+            using var ctrl = new Logic.Controllers.BikesController();
             await ctrl.InsertAsync(bike);
             await ctrl.SaveChangesAsync();
         }
