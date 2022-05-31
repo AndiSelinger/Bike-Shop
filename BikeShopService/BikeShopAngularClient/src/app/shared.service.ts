@@ -9,7 +9,7 @@ import { Bike } from './bike.model';
 })
 export class SharedService {
 
-  readonly APIUrl = "https://localhost:5001/api";
+  readonly APIUrl = "https://localhost:5001/api/bikeshop";
   readonly PhotoUrls = "";
 
   constructor(private http: HttpClient) { }

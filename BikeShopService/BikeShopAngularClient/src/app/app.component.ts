@@ -19,11 +19,10 @@ export class AppComponent {
 
   //bikeList: Bike[] = [];
 
-  //readBikeListFromHttp() {
+  //LoadBikeListFromApi() {
   //  this.sharedService.getBikeList().subscribe(res => this.bikeList = res as Bike[]);
   //}
   
-
   bikeList: Bike[] =
   [
     new Bike('Suzuki', 'GSXR', 'Hayabusa', 'VAM3456493847365', 175, 1300, new Date('2005-01-06'), 8000, 23000, 'assets/img/Hayabusa.jpg'),
