@@ -1,15 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BikeShopService",
-    "\\BikeShopService\\BikeShop.Logic\\Entities",
-    "\\BikeShopService\\BikeShopAngularClient",
-    "\\BikeShopService\\BikeShopAngularClient\\src",
-    "\\BikeShopService\\BikeShopAngularClient\\src\\app",
-    "\\projectfiles\\TeamMemberDemoPages",
-    "\\projectfiles\\TeamMemberDemoPages\\OliverKern",
-    "\\projectfiles\\TeamMemberDemoPages\\OliverKern\\html-tut"
+    "\\BikeShopService"
   ],
-  "SelectedNode": "\\BikeShopService\\BikeShopAngularClient\\src\\styles.css",
+  "SelectedNode": "\\BikeShopService\\BikeShop.sln",
   "PreviewInSolutionExplorer": false
 }

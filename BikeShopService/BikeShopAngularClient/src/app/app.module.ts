@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';    //automatically registered HttpClientModule for consuming the Http-Methods
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +8,10 @@ import { BikeListBoxComponent } from './bike-list-box/bike-list-box.component';
 import { BikeDetailsComponent } from './bike-details/bike-details.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SharedService } from './shared.service';     //registered the Shared Service
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,9 +23,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule
+    BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule
   ],
-  providers: [],
+  providers: [SharedService], //registered Shared Service as Provider
   bootstrap: [AppComponent]
 })
 export class AppModule { }
