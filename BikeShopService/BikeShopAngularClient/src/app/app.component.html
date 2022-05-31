@@ -1,20 +1,19 @@
-<body>
-  <div class="main-container">
-    <app-header></app-header>
-    <app-navbar></app-navbar>
+<div class="main-container">
+  <app-header></app-header>
+  <app-navbar></app-navbar>
 
-    <div class="body-container">
-      <div>
-        <app-bike-details *ngIf="selectedBike else no_bike_selected" [selected]="selectedBike"></app-bike-details>
-        <ng-template #no_bike_selected>
-          <p>No bike selected!</p>
-        </ng-template>
-      </div>
-      <div *ngFor="let bike of bikeList">
-        <app-bike-list-box [bike]="bike" (selectedBike)="sendDetails(bike)"></app-bike-list-box>
-      </div>
+  <div class="body-container">
+    <div class="selected-bike">
+      <app-bike-details *ngIf="selectedBike else no_bike_selected" [selected]="selectedBike"></app-bike-details>
+      <ng-template #no_bike_selected>
+        <h4>No bike selected!</h4>
+      </ng-template>
     </div>
-
-    <app-footer></app-footer>
+    <div class="list-items" style="width: 300px;" *ngFor="let bike of bikeList">
+      <app-bike-list-box [bike]="bike" (selectedBike)="sendDetails(bike)"></app-bike-list-box>
+    </div>
   </div>
-</body>
+
+  <app-footer></app-footer>
+</div>
+
